@@ -1,0 +1,75 @@
+<!DOCTYPE html> <!--lfbg96-->
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Javascript</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="c">
+
+    <header id="cabeçalho">
+        <h1>Lista de Alunos</h1>
+    </header>
+
+    <main>
+        
+            <div class="title">
+                <h2>Alunos</h2>
+            
+            </div>
+            <div class="card">
+                <div class="lineInput">
+                    <label>Aluno.</label>
+                    <input type="text" id="nome" placeholder="Nome do Aluno">
+                </div>
+                <div class="lineInput">
+                    <label>Matri . </label>
+                    <input type="text" id="matricula" placeholder="Matricula">
+                </div>
+                <div class="lineInput">
+                    <label>Nota 1</label>
+                    <input type="number" id="nota1" placeholder="Primeira nota">
+                </div>
+                <div class="lineInput">
+                    <label>Nota 2</label>
+                    <input type="number" id="nota2" placeholder="Segunda nota">
+                </div>
+                <div class="lineInput">
+                    <label>Nota 3</label>
+                    <input type="number" id="nota3" placeholder="Terceira nota">
+                </div>
+                <button onclick="salvar()">Salvar</button>
+                <button onclick="cancelar()">Cancelar</button>
+            
+            </div>
+    </main>
+    <footer>
+        <div class="content">
+            <table border="7">
+                <thead>
+                    <th >ID</th>
+                    <th>Aluno</th>
+                    <th>Matricula</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Nota 3</th>
+                    <th>Ações</th>
+                    <th>Média</th>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+        
+            </table>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
